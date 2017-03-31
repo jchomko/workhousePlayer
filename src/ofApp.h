@@ -14,8 +14,17 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 		void exit();
+		void loadNextMovie();
+		void keyPressed(int key);
 
 		ofxOMXPlayer omxPlayer;
+
+		ofDirectory dir;
+		int dirIndex;
+		
+		vector<ofImage> masks;
+		int maskIndex;
+
 
 };
 
